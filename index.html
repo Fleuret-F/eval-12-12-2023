@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Eval Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav class="flex">
+            <img src="./img/apiLogo.svg" alt="Logo API" id="logo">
+
+            <img src="./img/MenuOpen.svg" alt="menu burger" id="burger">
+            <div id="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Portfolio</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card" id="presentation">
+            <div id="text">
+                <h1>Hello, je suis <span id="prenom"></span></h1>
+
+                <p>
+                    Je suis <span id="job"></span>, je suis <span id="accordBaser"></span> à <span id="ville"></span>, <span id="pays"></span> et j'ai <span id="age"></span> ans.
+                    <br>
+                    Je suis <span id="job"></span> BackEnd freelance avec une spécialisation dans les API REST.
+                    
+                    <br>
+                    J'aime Voyager et écouter de la musique. J'ai eu la chance de visiter certains pays tels que la Belgique, l'Espagne, l'Angleterre, la Pologne et Malte. Grâce à ces expériences de voyages, j'ai pu découvrir et apprendre de nouvelles cultures et enrichir mes compétences en langue étrangère (comme l'anglais et l'espagnol).
+                    
+                    <br>
+                    J'ai aussi pu acquérir de nouvelles compétences liées aux bonnes pratiques et aux savoir-faire professionnels indispensables dans le métier de développeur web (gestion de projets, versioning, ...).
+                    
+                    <br>
+                    Je possède également des compétences d'administration réseau, d'admininistration système Linux et quelques notions DevOps (Docker, Gitlab CI, ...). Libriste et linuxien, j'aime les temps conviviaux des install parties.
+                    
+                    <br>
+                    J'aime exercer mon métier dans un environnement me permettant de partager mes compétences avec celles d'une équipe.
+                </p>
+            </div>
+        </section>
+        
+        <section class="card" id="competences">
+            <div class="cardContent" id="contenu">
+                <h2>Compétences :</h2>
+                
+                <h3>Frameworks PHP :</h3>
+                <div class="techno" id="frameworks">
+
+                    <p></p>
+                </div>
+
+                <h3>Bases de données :</h3>
+                <div class="techno" id="bdd">
+
+                    <p></p>
+                </div>
+
+                <h3>IDE full API :</h3>
+                <div class="techno" id="ide">
+
+                    <p></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card" id="avisClients"></section>
+    </main>
+
+    <footer class="flex"></footer>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

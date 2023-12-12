@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr1: #9c36b5;
+    --clr2: #7048e8;
+    --clr3: #5c7cfa;
+    --clr4: #212529;
+    --clr5: #dee2e6;
+    --clr6: #f8f9fa;
+    --ftSize: 17.6px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: var(--clr4);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header, 
+footer {
+    background-color: var(--clr1);
+    color: var(--clr6);
+    font-size: clamp(8px, var(--ftSize), 19.2px);
+    width: 100vw;
+    padding: 0 auto;
+}
+
+/* header */
+header #logo {
+    min-width: 30px;
+    max-width: 90px;
+    margin: 5px 0;
+}
+/* header ID {} */
+
+header nav #burger {
+    width: 40px;
+    margin: 10px 5px;
+}
+
+header nav #menu.open {
+    right: 20px;
+    top: 100px;
+}
+
+header nav #menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+header nav #menu ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+/* main */
+main {
+    /* background: #48005c; */
+    background: linear-gradient(135deg, #48005c 0%, #8300e2 35%, #a269ff 100%);
+    width: 100%;
+}
+
+main .card {
+    min-width: 250px;
+    max-width: 1000px;
+    padding: clamp(32px, 2.5rem, 48px);
+    background-color: var(--clr6);
+    margin: 140px auto;
+}
+
+/* section presentation */
+main .card #text h1 {
+    font-size: clamp(32px, 3rem, 56px);
+}
+
+/* section competences */
+main .card .cardContent h2 {
+    font-size: clamp(24px, 2rem, 40px);
+}
+
+main .card .cardContent h3 {
+    font-size: clamp(16px, 1.25rem, 24px);
+    color: var(--clr1);
+    text-decoration: underline;
+}
+
+main .card .cardContent .techno p {
+    font-style: italic;
+    font-size: 20.8px;
+}
+
+/* media queries */
+@media (min-width: 480px) {
+    header nav #burger {
+        display: none;
+    }
+    header nav #menu {
+        position: absolute;
+    }
+    header nav #menu ul {
+        flex-direction: row;
+    }
+}
